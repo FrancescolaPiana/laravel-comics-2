@@ -3,14 +3,14 @@
 @section('content')
 <div class="space">
     <div class="container">
-        {{-- @foreach ($comic as $obj)
+        @foreach ($comics as $comic)
             <div class="carta">
                 <div class="img">
-                    <img src="{{$obj['thumb']}}" alt="">
+                    <img src="{{$comic['url']}}" alt="">
                 </div>
-                <h5 class="text-white">{{$obj['title']}}</h5>
+                <h5 class="text-white">{{$comic['title']}}</h5>
             </div>
-        @endforeach --}}
+        @endforeach
     </div>
     <div class="loadmore">
         <a href="">load more</a>
