@@ -8,13 +8,13 @@
         <nav class="navbar-nav container navbar-light">
             <ul class="list-unlysted d-flex justify-content-center gap-3 text-uppercase">
                 <li class="nav-item">
-                    <a href="" class="nav-link">
-                        <strong>characters</strong>
+                    <a href="{{route('home')}}" class="nav-link {{Route::currentRouteName() == 'home' ? 'active' : ''}}">
+                        <strong>home</strong>
                     </a>
                     
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">
+                    <a href="{{route('comic.index')}}" class="nav-link {{Route::currentRouteName() == 'comic.index' ? 'active' : ''}}">
                         <strong>comics</strong>
                     </a>
                     
