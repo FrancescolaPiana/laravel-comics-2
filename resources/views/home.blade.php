@@ -4,7 +4,7 @@
 <div class="space">
     <div class="container">
         @foreach ($comics as $comic)
-        <a href="">
+        <a href="{{route('comic.show', $comic->id)}}">
             <div class="carta">
                 <div class="img">
                     <img src="{{$comic['url']}}" alt="">
